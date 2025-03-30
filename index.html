@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFC Model Viewer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+    <div id="viewer-container">
+        <canvas id="canvas"></canvas>
+        <input type="file" id="file-input" accept=".ifc"/>
+        <button id="upload-button">Load IFC Model</button>
+        <div id="property-menu">
+            <button class="close-button">×</button>
+            <h2 id="element-id"></h2>
+            <div id="properties-container"></div>
+        </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html> 

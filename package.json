@@ -1,0 +1,28 @@
+{
+  "name": "ifc_loader",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "copy-wasm": "node copy-wasm.js",
+    "dev": "npm run copy-wasm && vite",
+    "build": "npm run copy-wasm && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "openai": "^4.89.1",
+    "three": "0.152.2",
+    "three-mesh-bvh": "^0.5.23",
+    "web-ifc": "^0.0.39",
+    "web-ifc-three": "0.0.122"
+  },
+  "devDependencies": {
+    "vite": "^4.3.9",
+    "vite-plugin-static-copy": "^2.3.0"
+  }
+}
